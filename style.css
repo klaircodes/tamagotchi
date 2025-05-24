@@ -8,10 +8,12 @@ body {
 
 .tama-container {
   position: absolute;
-  top: 10px;
+  /* top: 10px; */
+  top: -200px;
   width: 700px;  
   height: 900px;  
   overflow: hidden;
+  transform: scale(0.5)
 }
 
 .tama-bg {

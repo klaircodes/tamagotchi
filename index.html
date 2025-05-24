@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pixel Chopper Breathing Animation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="tama-container">
+    <img src="images/frame.PNG" class="frame">
+    <!-- Mood Alert Window -->
+    
+    <div id="mood-window" style="
+      display: none; 
+      position: absolute; 
+      left: 50%; 
+      top: 52%; 
+      transform: translate(-50%,-50%);
+      z-index: 99; 
+      flex-direction: column; 
+      align-items: center;
+    ">
+      <img id="mood-window-img" src="images/window-hungry.PNG" style="width:350px; height:auto;"/>
+      <img id="button-okay" src="images/button-okay.PNG" style="width:120px; margin-top:-90px; cursor:pointer;"/>
+    </div>
+
+    <!--(hidden by default) -->
+    <img id="food-img" src="" style="display:none; position:absolute; left:50%; top:375px; transform:translateX(-50%); z-index:50; width:70px; opacity:0; pointer-events:none;">
+    
+    <img id="toy-img" src="images/toy.PNG" style="display:none; position:absolute; left:51%; top:390px; transform:translateX(-50%); z-index:201; width:70px; opacity:0; pointer-events:none;">
+
+    <img id="sleep-img" src="images/z's.PNG" style="display:none; position:absolute; left:50%; top:390px; transform:translateX(-50%); z-index:202; width:110px; opacity:0; pointer-events:none;">
+
+    <div class="tama-screen">
+      <img src="images/bg.PNG" class="tama-bg">
+      <img src="images/body.PNG" class="tama-body">
+      <img src="images/head.PNG" class="tama-head">
+      <img src="images/happy-open.PNG" class="tama-expression">
+    </div>
+    
+    <div class="buttons">
+      <img src="images/button-a.PNG" class="button-a">
+      <img src="images/button-b.PNG" class="button-b">
+      <img src="images/button-c.PNG" class="button-c">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

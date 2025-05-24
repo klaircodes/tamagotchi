@@ -1,0 +1,96 @@
+body {
+  background: #fce9d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tama-container {
+  position: absolute;
+  width: 700px;  
+  height: 900px;  
+  overflow: hidden;
+}
+
+.tama-bg {
+  position: absolute;
+  left: 95px;
+  top: 330px;
+  width: 500px;
+  height: 350px;
+  z-index: 1;
+}
+
+.frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+.tama-body {
+  position: absolute;
+  left: 50%;
+  top: 572px;       
+  width: 120px;     
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.tama-head {
+  position: absolute;
+  left: 50%;
+  top: 430px;       
+  width: 210px;     
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.tama-expression {
+  position: absolute;
+  left: 50%;
+  top: 525px;       
+  width: 75px;      
+  transform: translateX(-50%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  top: 710px; /* same as before */
+  transform: translateX(-50%);
+  display: flex;
+  gap: 45px;
+  z-index: 20;
+}
+
+.button-a,
+.button-b,
+.button-c {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.button-b {
+  position: relative;
+  top: 24px; 
+}
+
+.button-a:active, .button-b:active, .button-c:active {
+  transform: scale(0.94);
+}
+
+#button-okay {
+  margin-left: 90px; 
+}
+
+#mood-window {
+  filter: saturate(0.7);
+}

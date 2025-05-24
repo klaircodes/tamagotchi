@@ -1,5 +1,5 @@
 body {
-  background: #fce9d8;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,7 @@ body {
 
 .tama-container {
   position: absolute;
+  top: 10px;
   width: 700px;  
   height: 900px;  
   overflow: hidden;
